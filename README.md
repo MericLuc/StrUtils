@@ -1,4 +1,4 @@
-# StrUtils
+# StrUtils ![Language](https://img.shields.io/badge/language-C++11-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 A small c++ library to perform operations on std::string
 
 # Architecture
