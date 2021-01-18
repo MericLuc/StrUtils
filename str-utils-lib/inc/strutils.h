@@ -10,6 +10,8 @@
 #include <locale>
 #include <memory>
 #include <stdexcept>
+#include <fstream>
+#include <iterator>
 
 namespace StrUtils
 {
@@ -132,6 +134,12 @@ namespace StrUtils
 
     // ---------------------------------------- //
     std::string repeat(const std::string&, unsigned);
+
+    // ---------------------------------------- //
+    template<typename T>
+    std::size_t countWords( T& p_input ) {
+        return std::distance( std::istream_iterator<std::string>{p_input}, {} );
+    }
 
 }; // Namespace StrUtils
 
